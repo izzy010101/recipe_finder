@@ -2,8 +2,6 @@ import { useState, useEffect, useCallback } from 'react';
 
 const appId = import.meta.env.VITE_EDAMAM_APP_ID;
 const appKey = import.meta.env.VITE_EDAMAM_API_KEY;
-
-
 const useRecipes = (initialQuery = 'salad') => {
     const [recipes, setRecipes] = useState([]);
     const [loading, setLoading] = useState(true);
